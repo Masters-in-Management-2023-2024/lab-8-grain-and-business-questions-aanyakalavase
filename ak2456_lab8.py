@@ -49,8 +49,11 @@ for column in df.columns:
 """### Question 3: "When I look at one line in this database, what am I looking at?"
 
 Explain in business terms:
+"""
 
-**Your answer:** Each row represents: the price of diamond based on its characteristics
+df.head(10)
+
+"""**Your answer:** Each row represents: one diamond and its characteristics
 
 ## Section 2: Strategic Business Questions (20 minutes)
 
@@ -97,7 +100,7 @@ print(avg_price_by_color)
 
 """**Reflection:** After analyzing by color, how has your view of the data changed? What does each row in your result represent now?
 
-**Your answer:** New grain = Average price by the color of the diamond
+**Your answer:** New grain = color of the diamond (and its average price)
 
 ## Section 3: Advanced Strategic Analysis (10 minutes)
 
@@ -126,7 +129,7 @@ print(pricing_by_cut_color)
 
 """**Reflection:** How specific is your analysis now? What level of detail does each row represent?
 
-**Your answer:** New grain = Average price for a Cut - Color combination
+**Your answer:** New grain = Cut - color combination of a diamond
 
 ### Question 10: URGENT - "Our biggest client is interested in purchasing entire inventory segments. They asked: 'Which color-cut combinations represent your highest total inventory value?' Show me the top 5 most valuable inventory segments by total worth, and include how many diamonds are in each segment."
 
